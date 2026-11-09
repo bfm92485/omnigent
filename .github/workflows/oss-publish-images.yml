@@ -42,8 +42,8 @@ on:
       - '.github/workflows/oss-publish-images.yml'
   # Daily nightly promotion (07:00 UTC). Retags the current :latest-dev as
   # :latest-nightly — handled by promote-nightly, not a rebuild.
-  schedule:
-    - cron: '0 7 * * *'
+  # schedule:
+    # - cron: '0 7 * * *'
   workflow_dispatch:
     inputs:
       bump_latest:
