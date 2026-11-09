@@ -27,9 +27,9 @@ on:
         description: "Comma-separated version set for BOTH axes (e.g. 'main,v0.2.0'). Empty = main + all non-rc tags."
         required: false
         default: ""
-  schedule:
+  # schedule:
     # Every 12 hours (00:00 and 12:00 UTC).
-    - cron: "0 */12 * * *"
+    # - cron: "0 */12 * * *"
 
 concurrency:
   group: backcompat-${{ github.workflow }}-${{ github.sha }}
